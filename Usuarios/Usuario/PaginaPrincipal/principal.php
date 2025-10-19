@@ -153,7 +153,7 @@ $conn = conexion();
                             </div>
                         </form>
 
-                        <a href="../inicio secion/Inicio.html">No tengo una cuenta</a>
+                        <a href="../Cuenta/Registrar/FormUsuario.php">No tengo una cuenta</a>
                         <button class="cerrar" onclick="getElementById('accesoD').close();">Cerrar</button>
                     </div>
                 </section>

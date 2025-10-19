@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allimite</title>
-    <link rel="stylesheet" href="../../estilos/Inicio.css">
+    <link rel="stylesheet" href="../Registrar/Inicio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
@@ -49,29 +49,40 @@
         </div>
             <h2>Registrar Usuario</h2>
             <form method="post" action="../../PHP/RegUsuario.php">
-                <div class="usuario">
-                    <input type="text" name="nom" required placeholder="Monkey_pilfrut86">
+                   <div class="usuario">
+                        <button type="submit" value="Admin" id="admin">Administrador</button>
+                        <button type="submit" value="Asesor Comercial" id="Asesor">Asesor Comercial</button>
+                        <button type="submit" value="Mecanico" id="Mecanico">Mecanico</button>
+                        <button type="submit" value="User" id="user">Usuario</button>
                     <br>
-                    <label for="nom">Nombre de Usuario</label>
                 </div>
-                <div class="contra">
-                    <input type="password" name="con" required placeholder="***********">
+            <form action="#" method="post">
+                <div class="usuario">
+                    <input type="text" name="ciAdmin">
+                    <br>
+                    <label for="ciAdmin" placeholder="12554546">Carnet de Identidad</label>
+                    <input type="text" name="nom">
+                    <br>
+                    <label for="nom">Nombres</label>
+                    <br>
+                    <input type="text" name="app" required>
+                    <br>
+                    <label for="app">Apellidos</label>
+                    <br>
+                    <input type="mail" name="correo">
+                    <br>
+                    <label for="correo">correo</label>
+                    <br>
+                    <input type="password" for=con>
                     <br>
                     <label for="con">contraseña</label>
-                </div>
-                <div class="usuario">
-                    <select name="tip" >
-                        <option value="Admin">Admin</option>
-                        <option value="Usuario">Usuario</option>
-                        <option value="AsesorComercial">Asesor Comercial</option>
-                        <option value="Mecanico">Mecanico</option>
-                    </select>
-                    <br>
-                    <label for="tip">tipo de usurario</label>
+                    
                 </div>
                 <br>
                 
                 <input type="submit" value="REGISTRATE" class="REGISTRATE">
+            </form>
+                </div>
             </form>
         </div>
     </main>

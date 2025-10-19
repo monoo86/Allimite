@@ -5,7 +5,7 @@
         $servername="localhost";
         $username="root";
         $password="";
-        $database="allimitefinal";
+        $database="proyecto";
 
         //LA CONEXION
         //mysqli_connect(servidor,usuario,password,basededatos)
