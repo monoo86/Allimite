@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allimite</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="navCon">
+                <figure class="navFig">
+                    <img src="../../Usuario/Imagenes/tiburon.png" alt="Imgen no cargada" class="navLogo">
+                </figure>
+                <label class="navToggle">
+                    <input type="checkbox" id="menuInput" class="navInput">
+                </label>
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="../inicio secion/Inicio.html" class="navLink">Inicio sesion</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="../principal/principal.html" class="navLink">principal</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="../catalogo/Catalogo.html" class="navLink">catalogo</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="../promociones/Promociones.html" class="navLink">promociones</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="titulo">
+            <h2>Sistema de Administrador</h2>
+        </section>
+        <section id="dash">
+            <div id="menuD">
+                <h4>Administrador</h4>
+                <a href="#">Inicio</a>
+                <a href="#">Usuario de Administrador</a>
+                <h4>Usuarios</h4>
+                <a href="#">Administrador</a>
+                <a href="#">Asesor Comercial</a>
+                <a href="#">Mecanicos</a>
+                <a href="#">Usuario</a>
+                <h4>Inventario</h4>
+                <a href="#">Motocicleta</a>
+                <a href="#">Distribuidora</a>
+                <a href="#">Ofertas</a>
+                <h4>Ventas y pagos</h4>
+                <a href="#">Pagos</a>
+                <a href="#">Compras</a>
+                <a href="#">Carrito</a>
+                <h4>Mecanica</h4>
+                <a href="#">Mantenimientos</a>
+                <a href="#">Pago Mantento</a>
+            </div>
+            <div id="dashD">
+                <h4></h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <section>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/1.1.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/1.2.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/1.3.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/1.4.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/1.5.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/1.6.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/1.7.png" alt="Imgen no cargada"></a>
+            </div>
+        </section>
+        
+        <section>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/2.1.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/2.2.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/2.3.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/2.4.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/2.5.png" alt="Imgen no cargada"></a>
+            </div>
+            <div>
+                <a href="#"><img src="../../Usuario/Imagenes/logos empresas/2.6.png" alt="Imgen no cargada"></a>
+            </div>
+        </section>
+        <section id="pie">
+            <img src="../../Usuario/Imagenes/LOGO OFICIAL blanco y rojo.png" alt="">
+            <h2>NUNCA NOS DETENEMOS</h2>
+            <p>
+                allimite.575@gmail.com <br>
+                CEl: +591 69859159 <br>
+                Bolivia
+            </p>
+        </section>
+    </footer>
+</body>
+</html>

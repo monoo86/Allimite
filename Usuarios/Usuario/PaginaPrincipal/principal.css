@@ -1,0 +1,621 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*******fondo*******/
+
+body
+{
+    height: auto;
+    background-image: url(../imagenes/fondo\ off.png);
+    background-repeat: no-repeat;
+    font-family:Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-color: rgb(168, 168, 168);
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 12%;
+}
+
+/*******menu*******/
+
+main
+{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+main header
+{
+    background-color: rgb(255, 0, 0);
+    width: 80%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+main header nav
+{
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main header nav button
+{
+    z-index: 10;
+    font-size: 21px;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 200ms;
+}
+main header nav button:hover
+{
+    font-size: 25px;
+    width: 90%;
+    height: 90%;
+    box-shadow: 2px 2px 13px black;
+}
+main header #med
+{
+    width: 10%;
+}
+
+/*******tiburon*******/
+
+main header nav a
+{
+    text-align: center;
+}
+main header nav a img
+{
+    transition: 200ms;
+    width: 100%;
+}
+main header nav a img:hover
+{
+    width: 80%;
+}
+
+/*******Boton de cerrar*******/
+main header dialog .cerrar
+{
+    width: 37%;
+    margin: 0px auto;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 200ms;
+    border: none;
+    color: rgb(255, 72, 72);
+}
+main header dialog .cerrar:hover
+{
+    width: 40%;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 72, 72);
+    box-shadow: 5px 5px 13px black;
+}
+main header nav #acceso
+{
+    display: none;
+    position: fixed;
+    transition: 500ms;
+}
+
+/*******modelos*******/
+
+main header #modelosD 
+{
+    padding: 20px;
+    background-color: rgba(88, 88, 88, 0.39);
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-top: 10%;
+}
+main header #modelosD #modelos
+{
+    
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    background-color: rgba(253, 0, 0, 0.842);
+}
+main header #modelosD #modelos div
+{
+    background-color: white;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+}
+main header #modelosD #modelos div h2
+{
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+}
+
+/*******modelos decoracion*******/
+
+main header #modelosD #modelos div #modmed
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main header #modelosD #modelos div #modmed ul
+{
+    width: 33.3%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1%;
+}
+main header #modelosD #modelos div #modmed ul .marca
+{
+    height: 7%;
+}
+main header #modelosD #modelos div #modmed ul .marca img
+{
+    width: 100%;
+    height: 100%;
+}
+main header #modelosD #modelos div #modmed ul .tex
+{
+    font-size: 25px;
+}
+main header #modelosD #modelos div #modmed ul .carac
+{
+    width: 100%;
+    text-align: center;
+}
+main header #modelosD #modelos div #modmed ul .carac a
+{
+    background-color: white;
+    color:  rgb(255, 72, 72);
+    transition: 200ms;
+    border-radius: 5px;
+    font-size: 20px;
+    text-shadow: 5px 5px 5px;
+}
+main header #modelosD #modelos div #modmed ul .carac a:hover
+{
+    background-color:  rgb(255, 72, 72);
+    color: white;
+    padding: 5px;
+    font-size: 23px;
+    text-shadow: 0px 0px 0px;
+    box-shadow: 5px 5px 13px black;
+}
+main header #modelosD #modelos div #modmed ul .modimg 
+{
+    height: 65%;
+    transition: 200ms;
+}
+main header #modelosD #modelos div #modmed ul .modimg img
+{
+    height: 100%;
+}
+main header #modelosD #modelos div #modmed ul .modimg:hover
+{
+    height: 73%;
+    box-shadow: 5px 5px 13px black;
+}
+main header #modelosD #modelos div #modabajo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+main header #modelosD #modelos div #modabajo a
+{
+    background-color: white;
+    color:  rgb(255, 72, 72);
+    font-size: 30px;
+    transition: 200ms;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 5px 5px 5px;
+}
+main header #modelosD #modelos div #modabajo a:hover
+{
+    background-color:  rgb(255, 72, 72);
+    color: white;
+    font-size: 40px;
+    text-shadow: 0px 0px 0px;
+    box-shadow: 5px 5px 20px black;
+}
+
+/*******promociones*******/
+
+main header #promocionesD 
+{
+    padding: 20px;
+    background-color: rgba(88, 88, 88, 0.39);
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-top: 10%;
+}
+main header #promocionesD #promociones
+{
+    
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    background-color: rgba(253, 0, 0, 0.842);
+}
+main header #promocionesD #promociones div
+{
+    background-color: white;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+}
+main header #promocionesD #promociones div h2
+{
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+}
+
+/*******promociones decoracion*******/
+
+main header #promocionesD #promociones div div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+main header #promocionesD #promociones div div a
+{
+    text-align: center;
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+    border-radius: 10px;
+}
+main header #promocionesD #promociones div div a:hover
+{
+    background-color: rgb(255, 72, 72);
+    width: 23%;
+    box-shadow: 5px 5px 20px black;
+}
+main header #promocionesD #promociones div div a:hover img
+{
+    width: 100%;
+    height: 100%;
+}
+main header #promocionesD #promociones div div a:hover h4
+{
+    font-size: 40px;
+    color: white;
+}
+main header #promocionesD #promociones div div a h4
+{
+    font-size: 30px;
+    color: red;
+}
+
+/*******nosotros*******/
+
+main header #nosotrosD 
+{
+    padding: 20px;
+    background-color: rgba(88, 88, 88, 0.39);
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-top: 10%;
+}
+main header #nosotrosD #nosotros
+{
+    
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    background-color: rgba(253, 0, 0, 0.842);
+}
+main header #nosotrosD #nosotros div
+{
+    background-color: white;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main header #nosotrosD #nosotros div h2
+{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+}
+
+/*******nosotros decoracion*******/
+
+main header #nosotrosD #nosotros div #imag
+{
+    width: 35%;
+}
+main header #nosotrosD #nosotros div #imag img
+{
+    width: 70%;
+    transition: 200ms;
+}
+main header #nosotrosD #nosotros div #imag img:hover
+{
+    width: 90%;
+    box-shadow: 5px 5px 20px black;
+}
+main header #nosotrosD #nosotros div #redes
+{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+main header #nosotrosD #nosotros div #redes a
+{
+    width: 20%;
+    height: 70%;
+    border-radius: 10px;
+    transition: 200ms;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+main header #nosotrosD #nosotros div #redes a:hover
+{
+    width: 25%;
+    height: 75%;
+    color: white;
+    background-color: black;
+    box-shadow: 5px 5px 20px black;
+}
+main header #nosotrosD #nosotros div #pagina
+{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+main header #nosotrosD #nosotros div #pagina a
+{
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+    transition: 200ms;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+main header #nosotrosD #nosotros div #pagina a:hover
+{
+    width: 33%;
+    height: 75%;
+    color: white;
+    background-color: black;
+    box-shadow: 5px 5px 20px black;
+    font-size: 30px;
+}
+
+/*******acceso*******/
+
+main header #accesoD 
+{
+    padding: 20px;
+    background-color: rgba(88, 88, 88, 0.39);
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-top: 5%;
+}
+main header #accesoD #acceso
+{
+    width: 60%;
+    height: 85%;
+    margin: auto;
+    background-color: rgba(151, 151, 151, 0.322);
+}
+main header #accesoD #acceso div
+{
+    background-color: rgba(151, 151, 151, 0);
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+}
+main header #accesoD #acceso div h2
+{
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+}
+
+/*******acceso decoracion*******/
+
+main header #accesoD #acceso div form
+{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 90%;
+}
+main header #accesoD #acceso div form img
+{
+    width: 33%;
+    transition: 200ms;
+    border-radius: 10px;
+}
+main header #accesoD #acceso div form img:hover
+{
+    box-shadow: 5px 5px 20px black;
+    width: 36%;
+}
+main header #accesoD #acceso div form div
+{
+    padding: 10px;
+    gap: 3%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main header #accesoD #acceso div form div h4
+{
+    color: rgb(255, 14, 14);
+    font-size: 40px;
+}
+main header #accesoD #acceso div form div label
+{
+    font-size: 25px;
+    color: white;
+}
+main header #accesoD #acceso div form div input
+{
+    margin: 0px auto;
+    width: 80%;
+    font-size: 30px;
+}
+main header #accesoD #acceso div form div button
+{
+    margin: auto;
+    width: 37%;
+    height: 18%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(71, 71, 71, 0.671);
+    font-size: 25px;
+    border-radius: 10px;
+    transition: 200ms;
+}
+main header #accesoD #acceso div form div #hjas
+{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(71, 71, 71, 0.671);
+    text-align: center;
+    width: 40%;
+}
+main header #accesoD #acceso div form div button:hover
+{
+    width: 40%;
+    height: 20%;
+    color: white;
+    background-color: rgb(255, 72, 72);
+    font-size: 27px;
+    box-shadow: 5px 5px 20px black;
+}
+main header #accesoD #acceso a
+{
+    border: solid 2px rgba(0, 0, 0, 0.432);
+    width: 30%;
+    height: 5%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(71, 71, 71, 0.671);
+    border-radius: 10px;
+    transition: 200ms;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    text-align: center;
+}
+main header #accesoD #acceso a:hover
+{
+    box-shadow: 5px 5px 20px black;
+    width: 35%;
+    height: 7%;
+    color: white;
+    background-color: red;
+    font-size: 35px;
+}
+main header #accesoD #acceso div button
+{
+    color: white;
+}
+
+/*******Medio-Contenido*******/
+
+#MedCon
+{
+    width: 100%;
+    height: auto;
+}
+
+/*******Logos*******/
+
+footer
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer section
+{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+footer section div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+}
+footer section div a
+{
+    transition: 200ms;
+}
+footer section div a:hover
+{
+    font-size: 50px;
+    background-color: white;
+    box-shadow: 30px 30px 30px;
+}

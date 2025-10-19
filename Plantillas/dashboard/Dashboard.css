@@ -1,0 +1,252 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*******fondo*******/
+
+body
+{
+    height: auto;
+    background-image: url(../../Usuarios/Usuario/Imagenes/ENCABEZADO\ OFF.png);
+    background-repeat: no-repeat;
+    font-family:Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-color: rgb(168, 168, 168);
+}
+
+/*******menu*******/
+
+header .nav
+{
+    background-color: red;
+}
+header .navCon
+{
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    ---icono-menu: url("../../Usuarios/Usuario/Imagenes/menu.svg");
+    ---transform-menu-show: translate(-100%);
+}
+header .navCon:has(.navInput:checked)
+{
+    ---icono-menu: url("../../Usuarios/Usuario/Imagenes/menu_x.svg");
+    ---transform-menu-show: translate(0);
+}
+header .navLogo
+{
+    height: 80px;
+    transition: 200ms;
+    border-radius: 10px;
+}
+header .navLogo:hover
+{
+    height: 100px;
+    background-color: white;
+}
+header .navFig , .navToggle
+{
+    z-index: 10;
+}
+header .navInput
+{
+    display: none;
+}
+header .navToggle
+{
+    width: 30px;
+    height: 30px;
+    background-image: var(---icono-menu);
+    background-size: cover;
+    cursor: pointer;
+    transition: background-image .5s;
+}
+header .navInput
+{
+    width: 40px;
+    height: 40px;
+}
+header .navList
+{
+    transform: var(---transform-menu-show);
+    position: fixed;
+    inset: 0 ;
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    text-align: center;
+    padding: 1.5rem 5%;
+    background-color: rgba(206, 21, 21, 0.658);
+    list-style: none;
+    transition: 500ms transform;
+}
+header .navLink
+{
+    color: white;
+    text-decoration: none;
+}
+.navItem a
+{
+    font-size: 30px;
+    transition: 200ms;
+}
+.navItem a:hover
+{
+    background-color: white;
+    color: red;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+/*******Catalogo*******/
+
+main
+{
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+main section
+{
+    height: 95%;
+    width: 80%;
+}
+main #titulo h2
+{
+    width: 55%;
+    font-size: 30px;
+    background-color: rgb(255, 54, 54);
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+main #dash
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main #dash div
+{
+    box-shadow: 2px 3px 30px 3px;
+    background-color: white;
+}
+main #dash #menuD a
+{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    width: 80%;
+    padding: 3px;
+    transition: 180ms;
+}
+main #dash #menuD a:hover
+{
+    color: red;
+    font-size: 20px;
+    padding-left: 4%;
+    border-left: solid red 2px;
+}
+main #dash #menuD h4
+{
+    background-color: red;
+    color: white;
+    font-size: 22px;
+    width: 84%;
+    padding-left: 3%;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    margin-top: 2px;
+}
+main #dash #menuD
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 37%;
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+main #dash #dashD
+{
+    width: 60%;
+    border-radius: 18px;
+}
+
+/*******Logos*******/
+
+footer
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer section
+{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+footer section div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+}
+footer section div a
+{
+    transition: 200ms;
+}
+footer section div a:hover
+{
+    font-size: 50px;
+    background-color: white;
+    box-shadow: 30px 30px 30px;
+}
+
+/*******Pie de pagina*******/
+
+footer #pie
+{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    color: white;
+}
+footer #pie img
+{
+    margin-left: 3%;
+    height: 100%;
+}
+footer #pie p
+{
+    margin-right: 3%;
+}
+footer #pie h2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 35px;
+}
